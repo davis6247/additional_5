@@ -22,7 +22,7 @@ module.exports =  function check(str, bracketsConfig) {  //
             break;  
               
           }         
-          if(buffer[buffer.length - 1] != bracketsConfig[y][0] || buffer.length == 0)
+          if(buffer[buffer.length - 1] != bracketsConfig[y][0] || buffer.length == 0)   //case for incorrect sequence of brackets
               return false;
 
           buffer.pop();  //pop closed bracket
